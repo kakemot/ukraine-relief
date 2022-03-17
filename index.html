@@ -1,0 +1,58 @@
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.0/css/all.min.css" integrity="sha512-10/jx2EXwxxWqCLX/hHth/vu2KY3jCF70dCQB8TSgNjbCVAC/8vai53GfMDrO2Emgwccf2pJqxct9ehpzG+MTw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <link rel="stylesheet" href="style.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Oswald&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <div class="content">
+            <div class="image-container">
+                <img class="image" src="images/relief.png">
+            </div>
+            <div class="text">
+                $1 will save someone's life in Ukraine.<br>Support volunteers to help people in need.
+            </div>
+            <div class="donate-container">
+                <div class="donate-element-1">
+                    $<input id="amount" onchange="updateAmount()" class="donation-amount" type="number" value="1">
+                </div>
+                <div class="donate-element-2">
+                    <a id="link" href="https://www.paypal.com/donate/?cmd=_donations&item_name=Support%20volunteers%20and%20victims%20in%20Kharkiv&amount=1&currency_code=USD&business=Kharkivhelppleas@gmail.com" class="donate">DONATE</a>
+                </div>
+            </div>
+            <div class="field-image-container">
+                <img class="field-image" src="images/image1.jpg">
+            </div>
+            <div class="text">
+                $1 is the price of bread in Ukraine.<br>Let's help Ukraine together now.
+            </div>
+            <div class="field-image-container">
+                <img class="field-image" src="images/image2.jpg">
+            </div>
+            <div class="text">
+                For the price of a cup of coffee, you can help a victim in Ukraine.
+            </div>
+            <div class="field-image-container">
+                <img class="field-image" src="images/image3.jpg">
+            </div>
+            <div class="text">
+                
+            </div>
+            <div class="field-image-container">
+                <img class="field-image" src="images/image4.jpg">
+            </div>
+        </div>
+        <script>
+            function updateAmount() {
+                e = document.getElementById("amount");
+                link = document.getElementById("link");
+                link.href = "https://www.paypal.com/donate/?cmd=_donations&item_name=Support%20volunteers%20and%20victims%20in%20Kharkiv&amount="+e.value+"&currency_code=USD&business=Kharkivhelppleas@gmail.com"
+            }
+        </script>
+    </body>
+</html>

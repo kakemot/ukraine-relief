@@ -1,0 +1,119 @@
+body {
+    margin: 0px;
+}
+a {
+    display: inline-block;
+    margin: 0px 0px 4px 0px;
+    position: relative;
+    text-decoration: none;
+}
+.donate {
+    height: 20px;
+    font: 20px "Helvetica";
+    background: #0057b8;
+    background: -webkit-linear-gradient(top,transparent 0%,rgba(0,0,0,0.4) 100%), -webkit-linear-gradient(left,#057bff 0%,#ffd700 50%,#057bff 100%);
+    background: linear-gradient(to bottom,transparent 0%,rgba(0,0,0,0.4) 100%), linear-gradient(to right,#057bff 0%,#ffd700 50%,#057bff 100%);
+    background-position: 0 0;
+    background-size: 200% 100%;
+    border-radius: 4px;
+    color: #fff;
+    padding: 15px 65px 15px 15px;
+    text-shadow: 1px 1px 5px #666;
+    -webkit-transition: all 800ms;
+    transition: all 800ms;
+}
+.donate:after {
+    border-left: 1px solid #004b9f;
+    color: #003f85;
+    content: "\f004";
+    font: 20px "FontAwesome";
+    padding: 10px 0;
+    padding-left: 15px;
+    position: absolute;
+    right: 16px;
+    top: 7px;
+    -webkit-transition: all 600ms 200ms;
+    transition: all 600ms 200ms;
+}
+.donate:hover {
+    background-position: -100% 0;
+}
+.donate:hover:after {
+    border-left: 1px solid #0063d2;
+    color: #ffd700;
+    text-shadow: 0 0 10px #000;
+}
+
+.donate-container {
+    text-align: center;
+    font-family: 'Oswald', sans-serif;
+    font-size: 20px;
+}
+
+.donate-element-1 {
+    display: inline;
+text-align: center;
+}
+.donate-element-2 {
+    display: inline;
+    text-align: center;
+}
+
+.text {
+    font-family: 'Oswald', sans-serif;
+    font-size: 18px;
+    background-color: black;
+    text-align: center;
+    padding: 10px;
+    color: white;
+}
+
+.content {
+    position: absolute;
+    left: 50%;
+    -webkit-transform: translate(-50%, 0);
+    transform: translate(-50%, 0);
+  }
+
+  .image-container {
+      text-align: center;
+      width: 100vw;
+      background-color: #0057b8;
+  }
+
+  .field-image-container {
+    text-align: center;
+    width: 100vw;
+    background-color: black;
+}
+
+  .image {
+      width: 20vw;
+  }
+
+  .field-image {
+    width: 50vw;
+}
+  .donation-amount {
+      height: 50px;
+      width: 40wv;
+      font-size: 20px;
+      margin: 6px 0px 0px 0px;
+      border-width: 2px;
+      border-style: solid;
+      border-color: black;
+      padding: 4px;
+      border-radius: 4px;
+      box-sizing: border-box;
+      font-family: 'Oswald', sans-serif;
+  }
+
+  @media only screen and (max-width: 600px) {
+    .image {
+        width: 100vw;
+    }
+
+    .field-image {
+        width: 100vw;
+    }
+  }
