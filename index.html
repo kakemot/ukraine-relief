@@ -11,6 +11,53 @@
 <link href="https://fonts.googleapis.com/css2?family=Oswald&display=swap" rel="stylesheet">
     </head>
     <body>
- 
+        <div class="content">
+            <div class="image-container">
+                <img class="image" src="images/relief.png">
+            </div>
+            <div class="warning">
+                Donation link has been temporarily removed. We are looking for a way to avoid extensive paypal fees, and will be back in a few days.<br>
+                If you are Norwegian, you can use Vipps to send donations directly to the manager of the fund at +47 958 31 815.
+            </div>
+
+            <div class="text">
+                This donation goes to several volunteer groups in the eastern Ukrainian city Kharkiv. Our volunteers are Ukrainians from Kharkiv who could not sit by and do nothing, so they assembled a team that spreads over nearby cities. They work with delivering food, medicine and the humanitarian aid coming from all over the world to civilians and animals. They work with evacuation of civilians to safer areas and provide shelter to those who need it. By donating, you directly help those in need in this moment. Thank you for your donation!
+            </div>
+            <div class="field-image-container">
+                <img class="field-image" src="images/image5.jpg">
+            </div>
+            <div class="text">
+                <p>Here you can see some of our heroes documenting how the donations are being used:</p>
+                <div class="link"><img src="images/instagram.png"><a target="_blank" href="https://instagram.com/ilchenko_vjacheslav?utm_medium=copy_link ">Ilchenko Vjacheslav</a></div>
+                <div class="link"><img src="images/instagram.png"><a target="_blank" href="https://instagram.com/volonterkharkiv?utm_medium=copy_link ">volonterkharkiv</a></div>
+            </div>
+            <div class="field-image-container">
+                <img class="field-image" src="images/image6.jpg">
+            </div>
+            <div class="text">
+                <p>If you have any questions please contact us by email.</p>
+                <div class="link"><img src="images/mailicon.png"><a target="_blank" href="mailto:alina.sergeivna@gmail.com">Kharkiv Relief Fund</a></div>
+            </div>
+            <div class="field-image-container">
+                <img class="field-image" src="images/image7.jpg">
+            </div>
+            <div class="text">
+                $1 will save someone's life in Ukraine.
+                Support volunteers to help people in need.
+            </div>
+            <div class="field-image-container">
+                <img class="field-image" src="images/image8.jpg">
+            </div>
+            <div class="footer">
+                KHARKOV RELIEF FUND
+            </div>
+        </div>
+        <script>
+            function updateAmount() {
+                e = document.getElementById("amount");
+                link = document.getElementById("link");
+                link.href = "https://www.paypal.com/donate/?cmd=_donations&item_name=Support%20volunteers%20and%20victims%20in%20Kharkiv&amount="+e.value+"&currency_code=USD&business=Kharkivhelppleas@gmail.com"
+            }
+        </script>
     </body>
 </html>
