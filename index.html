@@ -16,11 +16,8 @@
                 <img class="image" src="images/relief.png">
             </div>
             <div class="donate-container">
-                <div class="donate-element-1">
-                    $<input id="amount" onchange="updateAmount()" class="donation-amount" type="number" value="1">
-                </div>
-                <div class="donate-element-2 disabled">
-                    <a disabled="disabled" id="link" href="https://www.paypal.com/donate/?cmd=_donations&item_name=Support%20volunteers%20and%20victims%20in%20Kharkiv&amount=1&currency_code=USD&business=alina.glushchenko.sergeivna@gmail.com" class="donate">DONATE</a>
+                <div class="donate-element-2">
+                    <a disabled="disabled" id="link" href="https://www.paypal.com/donate/?hosted_button_id=BJEL5KG6BT3MG" class="donate">DONATE</a>
                 </div>
             </div>
             <div class="text">
@@ -52,15 +49,8 @@
                 <img class="field-image" src="images/image8.jpg">
             </div>
             <div class="footer">
-                KHARKOV RELIEF FUND
+                KHARKIV RELIEF FUND
             </div>
         </div>
-        <script>
-            function updateAmount() {
-                e = document.getElementById("amount");
-                link = document.getElementById("link");
-                link.href = "https://www.paypal.com/donate/?cmd=_donations&item_name=Support%20volunteers%20and%20victims%20in%20Kharkiv&amount="+e.value+"&currency_code=USD&business=alina.glushchenko.sergeivna@gmail.com"
-            }
-        </script>
     </body>
 </html>
